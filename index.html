@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Распознание объекта с Lidar</title>
+	<script src="app/modernizr.min.js"></script>
+</head>
+<body>
+	<div class="back__img"></div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<div class="header__content">
+					<div class="header__logo logo">
+						<a href="#" class="logo__title">
+							Распознование объектов с помощью Lidar
+						</a>
+					</div>
+					<span class="header__stick"></span>
+					<nav class="header__nav nav">
+						<div class="nav__links">
+							<a class="nav__link" href="#part1">
+								<div>Актуальность</div>
+							</a>
+							<a class="nav__link" href="#part2">
+								<div>Цель</div>
+							</a>
+							<a href="#part3" class="nav__link">
+								<div>Объединение изображений</div>
+							</a>
+							<a href="#part4" class="nav__link">
+								<div>Техническая часть</div>
+							</a>
+							<a href="#part5" class="nav__link">
+								<div>Охрана дронов</div>
+							</a>
+						</div>
+					</nav>
+					<div class="header__burger burger">
+						<div class="burger__dots-row">
+							<span class="burger__dot"></span>
+							<span class="burger__dot"></span>
+							<span class="burger__dot"></span>
+						</div>
+						<div class="burger__dots-row">
+							<span class="burger__dot"></span>
+							<span class="burger__dot"></span>
+							<span class="burger__dot"></span>
+						</div>
+						<div class="burger__dots-row">
+							<span class="burger__dot"></span>
+							<span class="burger__dot"></span>
+							<span class="burger__dot"></span>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<ul class="menu__list">
+							<li class="menu__item">
+							<a class="menu__link" href="#part1">
+								Актуальность
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#part2">
+								Цель
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#part3">
+								Объединение изображений
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#part4">
+								Техническая часть
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#part5">
+								Охрана дронов
+							</a>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="main">
+				<div class="main__blur">
+					<div class="main__container _container">
+						<div class="main__content">
+							<h1 class="main__title  _anim-items _anim-no-hide">
+								Распознование объектов вторжения с помощью Lidar
+							</h1>
+							<h2 class="main__authors _anim-items _anim-no-hide">
+								Проэкт разработан студентами РУТ(МИИТ)
+							</h2>
+							<h2 class="main__author _anim-items _anim-no-hide">
+								Родин К. П., Черкас Н. В., Алифанов В. Н.,
+Мулов С. А., Севостьянов М. М., Редченко Е. В.
+							</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="part1" class="relevance">
+				<div class="relevance__container _container">
+					<div class="relevance__title _anim-items _anim-no-hide" >Актуальность</div>
+					<div class="relevance__content">
+						<p class="relevance__text _anim-items _anim-no-hide" >Беспилотные летательные аппараты (БПЛА) как никогда актуальны. Так как из-за протяженности железных дорог, установить наблюдение за каждым участком очень проблематично и затратно. Для выявлений несанкционированных проникновений, распознаваний ЧС, а также при прокладывании железнодорожных путей, удобнее использовать мобильны дроны.</p>
+					</div>
+				</div>
+			</section>
+			<section id="part2" class="objective">
+				<div class="objective__container _container">
+					<div  class="objective__title _anim-items _anim-no-hide">
+						Цель
+					</div>
+					<div class="objective__content">
+						<p class="objective__text _anim-items _anim-no-hide">
+							Разработка модели распознавания с использованием LIDAR. Объединение информации между камерой высокого разрешения и LIDAR.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="part3" class="images">
+				<div class="images__container _container">
+					<h3 class="images__title _anim-items _anim-no-hide">
+						Объединение изображений
+					</h3>
+					<div class="images__content">
+						<div class="images__item">
+							<div class="images__name _anim-items _anim-no-hide"> Изображение полученное с точек Lidar </div>
+							<video id="img01" src="img/01.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+						</div>
+						<div class="images__item">
+							<div class="images__name _anim-items _anim-no-hide">Объединение точек Lidar с камерой hd</div>
+							<video id="img02" src="img/02.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+						</div>
+						<div class="images__item">
+							<div class="images__name _anim-items _anim-no-hide"> Изображение полученное с точек Lidar в темноте</div>
+							<video id="img03" src="img/03.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+						</div>
+						<div class="images__item">
+							<div class="images__name _anim-items _anim-no-hide">Объединение точек Lidar с камерой hd в темноте</div>
+							<video id="img04" src="img/04.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+						</div>
+						<div class="images__item">
+							<div class="images__name _anim-items _anim-no-hide">Выделение объекта вторжения с помощью 3d угла смещения</div>
+							<img src="img/05.jpg" class="images__video _anim-items _anim-no-hide"></img>
+						</div>
+						<div data-spollers data-one-spoller class="images__spoller _anim-items _anim-no-hide">
+							<div class="spoller__dates dates">
+								<button tabindex="-1" type="button" data-spoller class="dates__btn"><span>База данных</span></button>
+								<div class="dates__list">
+									<a href="#image" class="dates__item popup-link">
+										<div class="dates__name">Изображение полученное с точек Lidar</div>
+										<div class="dates__day">24 ноября</div>
+										<div class="dates__hour">23:34</div>
+									</a>
+									<a href="#image2" class="dates__item popup-link">
+										<div class="dates__name">Объединение точек Lidar с камерой hd</div>
+										<div class="dates__day">24 ноября</div>
+										<div class="dates__hour">23:34</div>
+									</a>
+									<a href="#image3" class="dates__item popup-link">
+										<div class="dates__name">Изображение полученное с точек Lidar в темноте</div>
+										<div class="dates__day">16 ноября</div>
+										<div class="dates__hour">22:58</div>
+									</a>
+									<a href="#image4" class="dates__item popup-link">
+										<div class="dates__name">Объединение точек Lidar с камерой hd в темноте</div>
+										<div class="dates__day">16 ноября</div>
+										<div class="dates__hour">22:58</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="part4" class="teh-path">
+				<div class="teh-path__container _container">
+					<h3 class="teh-path__title _anim-items _anim-no-hide">Техническая часть</h3>
+					<div class="teh-path__content">
+						<p class="teh-path__text _anim-items _anim-no-hide">PointFusion - сеть, предназначенная для слияния, которая использует «PointNet» вместе с детектором 2D-объектов. Общая сетевая архитектура показана на рисунке. Как видно на рисунке, есть 2 ветви - одна для облака точек и одна для изображений. Ветка для изображений передает изображение в нейронную сеть «ResNet» для извлечения признаков по которым определяется вторжение на объект. Для ветви облака точек выбираются только точки, которые можно проецировать на двумерное изображение. Функции извлекаются в этой ветке с помощью нейронной сети «PointNet».</p>
+						<p class="teh-path__text _anim-items _anim-no-hide">Функция изображения, глобальная функция облака точек и функция облака точек для каждой точки создают изображение объединенного объекта. Затем объединённое изображение проходит обработку с помощью 3D угла смещения, в которой определяются размеры в пространстве, объекта вторгшегося на инфраструктуру. После выводит изображение с четкими границами постороннего объекта.
+							В данной подзадаче мы изучаем программное обеспечение сети PointFusion. Она состоит из двух нейросетей. Язык программирования нейросетей – Python. «ResNet» - нейросеть, предназначенная для выделения конкретного объекта на 2D изображении. «PointNet» - нейросеть, предназначенная для выделения облака точек, полученных с LIDAR.</p>
+							<p class="teh-path__text _anim-items _anim-no-hide">Как мы написали ранее обработка с помощью 3D угла смещения имеет 2 вывода. Первый вывод – берем абсолютное значение 8 углов ограничивающей рамки 3D. Для этого мы будем использовать функцию «vert» и библиотеки «Math и Matrix» на языке программирования Python. Функцию «vert» будем задавать с помощью 3-х координат (x, y, z) для каждой вершины параллелепипеда. Координаты для функции будем брать из полученного объединённого изображения с камеры высокого разрешения и LIDAR. Итого мы получим 8 координат, которые будут заключать объект, который вторгся на инфраструктуру, в 3D рамки.</p>
+							<p class="teh-path__text _anim-items _anim-no-hide">Второй вывод - относительное смещение и оценка от каждой точки облака точек. Для этого мы будем использовать матрицы. В Python мы задаем на нужной нам области точек матрицу, которая будет определять положение, масштаб, вращение 3D рамки в пространстве, для заключения нужного объекта в рамку.</p>
+							<p class="teh-path__text _anim-items _anim-no-hide">Для перемещения в пространстве будем использовать метод Translation. Мы будем менять значения положения вдоль осей координат X, Y, Z. Для этого нам понадобится исходная матрица, полученная с нужной нам области и функция Matrix, в которой мы и задаем значения положения вдоль осей координат.</p>
+							<p class="teh-path__text _anim-items _anim-no-hide">Для масштабирования мы будем использовать функцию scale.factor. Она состоит из трех аргументов. Первый – коэффициент масштабирования (он отвечает во сколько раз нужно увеличить 3D рамку). Второй – размер матрицы, поскольку мы работаем с 3D изображением, он всегда будет равен матрице 4x4. Третий – определяет по какой оси будет масштабирование. Задавать будем координатами (x, y, z), например (1, 0, 0) – масштабирование будет происходить только по оси X.</p>
+							<p class="teh-path__text _anim-items _anim-no-hide">Далее собираем все вместе и получаем нужную нам 3D рамку, заданную в пространстве. Затем накладываем полученную рамку на изображение, полученное с камеры высокого разрешения и LIDAR. В итоге мы получаем конечное изображением с определением объекта вторгшегося на инфраструктуру.</p>
+					</div>
+				</div>
+			</section>
+			<section id="part5" class="model">
+				<div class="model__container _container">
+					<h3 class="model__title _anim-items _anim-no-hide">Охрана местоположения дронов от злоумышленников</h3>
+					<div class="model__content">
+						<p class="model__text _anim-items _anim-no-hide">
+							Первым шагом в эффективной защите от угрозы является понимание того, что она существует. Важным аспектом эффективной охраны периметра является возможность вести круглосуточное наблюдение, независимо от погодных условий, условий окружающей среды или времени суток. Тепловизионные камеры могут обеспечить постоянную защиту от потенциальных злоумышленников, независимо от визуальных ограничений, уровня освещенности и других факторов.
+						</p>
+						<p class="model__text _anim-items _anim-no-hide">
+							Периметр аэропорта требуют не только непрерывного видеонаблюдения и контроля, но и надежного обнаружения вторжения с минимально возможным количеством ложных сигналов тревоги. Именно поэтому расширенная видео аналитика становится обязательной для любой адекватной системы видеонаблюдения. Такие функции, как обнаружение событий в реальном времени и оптимальное предоставление данных, оказывают существенную помощь в анализе попыток вторжения и содействуют упреждающему реагированию.
+						</p>
+						<p class="model__text _anim-items _anim-no-hide">
+							Расширенная аналитика, как правило, обеспечивает несколько автоматических вариантов уведомления о тревоге. Высококачественная, уникальная и адаптированная аналитика способна исключить ложные сигналы тревоги, понизить совокупную стоимость владения системой для конечного заказчика, позволяя при этом персоналу службы безопасности эффективно реагировать на события.
+Конечно все перечисленные выше технические средства и технологии наблюдения за периметром аэропорта, такие как радары, тепловизионные и обычные камеры, работают сами по себе достаточно продуктивно, но использование всех этих технологий и подсистем вместе обеспечивает наличие эффективной системы безопасности периметра. Например, радиолокатор наземного наблюдения может обнаруживать возможные угрозы за пределами линии ограждения по мере приближения какого-либо объекта и посылать сигнал PTZ-камерам для позиционирования их при необходимости наблюдения за определенной зоной. Встроенная видео аналитика на борту камер позволяет идентифицировать объект, сообщить о нарушении персоналу службы безопасности и собрать дополнительные данные, например, с помощью функции распознавания лиц и использования LIDAR совместно с камерами.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<div id="image" class="popup">
+		<div class="popup__body">
+			<div class="popup__content popup__content_image">
+				<a href="#header" class="popup__close close-popup">X</a>
+				<div class="popup__image">
+					<video id="img01" src="img/01.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="image2" class="popup">
+		<div class="popup__body">
+			<div class="popup__content popup__content_image">
+				<a href="#header" class="popup__close close-popup">X</a>
+				<div class="popup__image">
+					<video id="img01" src="img/02.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="image3" class="popup">
+		<div class="popup__body">
+			<div class="popup__content popup__content_image">
+				<a href="#header" class="popup__close close-popup">X</a>
+				<div class="popup__image">
+					<video id="img01" src="img/03.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="image4" class="popup">
+		<div class="popup__body">
+			<div class="popup__content popup__content_image">
+				<a href="#header" class="popup__close close-popup">X</a>
+				<div class="popup__image">
+					<video id="img01" src="img/04.mp4" loop="loop" class="images__video _anim-items _anim-no-hide" autoplay="true" muted controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+	</script>
+	<script src="app/menu.js"></script>
+	<script src="app/spollers.js"></script>
+	<script src="app/script.js"></script>
+</body>
+</html>
